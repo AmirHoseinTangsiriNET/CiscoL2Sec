@@ -12,7 +12,7 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ➜  ~ cd CiscoL2Sec
 
-➜  ~ Python3 Cisco2Sec.py
+➜  ~ python3 Cisco2Sec.py
 
 ## Attack That This Script Can Prevent:
 
