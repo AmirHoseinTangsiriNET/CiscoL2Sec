@@ -7,6 +7,11 @@ Python Network Security Automation Script
 This Is The Network Security Automation Script For Spoofing Attack Prevention In Cisco Layer 2 Switch
 # Developer: AmirHosein Tangsiri Nezhad
 
+## Inatllazion:
+➜  ~ git clone https://github.com/AmirHoseinTangsiriNET/CiscoL2Sec/
+➜  ~ cd CiscoL2Sec
+➜  ~ Python3 Cisco2Sec.py
+
 ## Attack That This Script Can Prevent:
 
 DHCP Spoofing Attack
@@ -17,10 +22,10 @@ Arp Spoofing Attack
 
 Arp Cache Poisoning
 
-# Prerequisite
-## Python 3
-## sys
-## telnetlib
-## colorama
-## time
+## Prerequisite
+Python 3
+sys
+telnetlib
+colorama
+time
 
