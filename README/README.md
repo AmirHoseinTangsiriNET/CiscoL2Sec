@@ -1,6 +1,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-![Apache 2,0 License](https://img.shields.io/badge/license-Apache%202.0-blue)
+![MIT License](https://img.shields.io/static/v1?label=License&message=MIT&color=RED)
 
 # CiscoL2Sec
 Python Network Security Automation Script
