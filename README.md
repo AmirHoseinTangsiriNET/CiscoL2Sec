@@ -25,9 +25,9 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 * Arp Cache Poisoning
 
 ## Prerequisite
-Python 3
-sys
-telnetlib
-colorama
-time
+* Python 3
+* sys
+* telnetlib
+* colorama
+* time
 
