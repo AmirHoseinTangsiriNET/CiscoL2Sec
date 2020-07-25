@@ -9,7 +9,9 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ## Inatllazion:
 ➜  ~ git clone https://github.com/AmirHoseinTangsiriNET/CiscoL2Sec/
+
 ➜  ~ cd CiscoL2Sec
+
 ➜  ~ Python3 Cisco2Sec.py
 
 ## Attack That This Script Can Prevent:
