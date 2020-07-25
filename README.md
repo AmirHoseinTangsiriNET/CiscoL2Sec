@@ -16,13 +16,13 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ## Attack That This Script Can Prevent:
 
-DHCP Spoofing Attack
+* DHCP Spoofing Attack
 
-DHCP Starvation Attack 
+* DHCP Starvation Attack 
 
-Arp Spoofing Attack
+* Arp Spoofing Attack
 
-Arp Cache Poisoning
+* Arp Cache Poisoning
 
 ## Prerequisite
 Python 3
