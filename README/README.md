@@ -7,3 +7,10 @@ Python Network Security Automation Script
 This Is The Network Security Automation Script For Spoofing Attack Prevention In Cisco Layer 2 Networks
 ## Developer: AmirHosein Tangsiri Nezhad
 
+# Prerequisite
+## Python 3
+## sys
+## telnetlib
+## colorama
+## time
+
