@@ -4,6 +4,7 @@ from colorama import Fore
 import time
 import os
 
+
 sys.stdout.write("\x1b[8;{rows};{cols}t".format(rows=35, cols=170))
 
 def clean():
