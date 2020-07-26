@@ -17,7 +17,7 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ➜  ~ cd CiscoL2Sec
 
-➜  ~ python3 Cisco2Sec.py
+➜  ~ python Cisco2Sec.py
 
 ## Attack That This Script Can Prevent:
 
@@ -30,7 +30,7 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 * Arp Cache Poisoning Attack
 
 ## Prerequisite
-* Python 3
+* Python 
 * sys
 * telnetlib
 * colorama
