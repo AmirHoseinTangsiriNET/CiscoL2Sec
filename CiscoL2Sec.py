@@ -68,6 +68,7 @@ def PortSecurity():
     telnet.write("interface range " + Interface + "\n")
     telnet.write("switchport port-security " + "\n")
     telnet.write("switchport port-security maximum 2" +  "\n")
+    telnet.write("end" +  "\n")
     time.sleep(1)
     print (Fore.RED + "End Configurtion")
 
@@ -94,7 +95,6 @@ def DynamicArpInspection():
 #    telnet.write("conf t" + "\n")
     telnet.write("ip arp inspection vlan 1-1000" + "\n")
     telnet.write("ip arp inspection validate src-mac dst-mac ip" + "\n")
-
 def DHCPSnooping():
     print(Fore.RED + """
     '||''|.   '||'  '||'   ..|'''.| '||''|.  '  .|'''.|                                     ||                   
