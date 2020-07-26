@@ -62,8 +62,8 @@ def DynamicArpInspection():
     print (Fore.BLUE + "Dynamic Arp Inspection Configurtion Started")
     print (Fore.BLUE + "Please With")
     
-    telnet.write("enable" + "\n")
-    telnet.write("conf t" + "\n")
+#    telnet.write("enable" + "\n")
+#    telnet.write("conf t" + "\n")
     telnet.write("ip arp inspection vlan 1-1000" + "\n")
     telnet.write("ip arp inspection validate src-mac dst-mac ip" + "\n")
 
@@ -80,8 +80,8 @@ def DHCPSnooping():
     print (Fore.RED + "DHCP Snooping Configurtion Started")
     print (Fore.RED + "Please With")
     print (Fore.RED + "----------------------------------")
-#    telnet.write("enable" + "\n")
-#    telnet.write("conf t" + "\n")
+    telnet.write("enable" + "\n")
+    telnet.write("conf t" + "\n")
     telnet.write("ip dhcp snooping" + "\n")
     telnet.write("ip dhcp snooping vlan 1-1000" + "\n")
     telnet.write("ip dhcp snooping information option" + "\n")
