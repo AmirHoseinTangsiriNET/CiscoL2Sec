@@ -43,7 +43,7 @@ print ("------------------------------------------------------------------------
 HostNameOrIP = "127.0.0.1" #Please Instead The Your Switch IP Address Of the "127.0.0.1"
 TelnetPortNumber = input("[+]:Please Enter The Telnet Port Number: ")
 
-telnet = telnetlib.Telnet(HostNameOurIP, TelnetPortNumber)
+telnet = telnetlib.Telnet(HostNameOrIP, TelnetPortNumber)
 
 def DynamicArpInspection():
     
