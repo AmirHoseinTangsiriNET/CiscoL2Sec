@@ -17,7 +17,7 @@ def printer(Print):
         sys.stdout.flush()
         time.sleep(2. / 100)
 
-print ("""
+print (Fore.YELLOW + """
 
 
  .d8888b. d8b                        888      .d8888b.  .d8888b.                  
@@ -79,8 +79,8 @@ def DHCPSnooping():
     print (Fore.RED + "DHCP Snooping Configurtion Started")
     print (Fore.RED + "Please With")
     print (Fore.RED + "----------------------------------")
-    telnet.write("enable" + "\n")
-    telnet.write("conf t" + "\n")
+#    telnet.write("enable" + "\n")
+#    telnet.write("conf t" + "\n")
     telnet.write("ip dhcp snooping" + "\n")
     telnet.write("ip dhcp snooping vlan 1-1000" + "\n")
     telnet.write("ip dhcp snooping information option" + "\n")
