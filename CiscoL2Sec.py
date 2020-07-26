@@ -38,7 +38,9 @@ print ("Developer: AmirHosein Tangsiri Nezhad")
 print ("GitHub:https://github.com/AmirHoseinTangsiriNET")
 print ("--------------------------------------------------------------------------------------------------------")
 
-HostNameOurIP = input("[+]:Please Enter The HostName: ")
+sys.stdout.write("Enter IP address: ")
+sys.stdout.flush()
+HostNameOurIP = sys.stdin.readline()
 TelnetPortNumber = input("[+]:Please Enter The Telnet Port Number: ")
 
 telnet = telnetlib.Telnet(HostNameOurIP, TelnetPortNumber)
