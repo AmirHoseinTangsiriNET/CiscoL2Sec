@@ -117,9 +117,9 @@ def DHCPSnooping():
     time.sleep(1)
     print (Fore.RED + "End Configurtion")
 
-PortSecurity()
 DHCPSnooping()
 DynamicArpInspection()
+PortSecurity()
 
 printer ("[+]:Settings Completed")
 printer ("[+]:DHCP-Snooping: Yes")
