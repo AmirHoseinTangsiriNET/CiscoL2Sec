@@ -38,9 +38,9 @@ print ("Developer: AmirHosein Tangsiri Nezhad")
 print ("GitHub:https://github.com/AmirHoseinTangsiriNET")
 print ("--------------------------------------------------------------------------------------------------------")
 
-sys.stdout.write("Enter IP address: ")
-sys.stdout.flush()
-HostNameOurIP = sys.stdin.readline()
+#sys.stdout.write("Enter IP address: ")
+#sys.stdout.flush()
+HostNameOurIP = "127.0.0.1" #Please Instead The Your Switch IP Address Of the "127.0.0.1"
 TelnetPortNumber = input("[+]:Please Enter The Telnet Port Number: ")
 
 telnet = telnetlib.Telnet(HostNameOurIP, TelnetPortNumber)
