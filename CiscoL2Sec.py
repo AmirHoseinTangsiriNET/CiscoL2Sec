@@ -46,6 +46,34 @@ TelnetPortNumber = input("[+]:Please Enter The Telnet Port Number: ")
 
 telnet = telnetlib.Telnet(HostNameOrIP, TelnetPortNumber)
 
+
+def PortSecurity():
+    print ("""
+    d8888b.        .d8888. d88888b  .o88b. db    db d8888b. d888888b d888888b db    db 
+    88  `8D        88'  YP 88'     d8P  Y8 88    88 88  `8D   `88'   `~~88~~' `8b  d8' 
+    88oodD'        `8bo.   88ooooo 8P      88    88 88oobY'    88       88     `8bd8'  
+    88~~~   C8888D   `Y8b. 88~~~~~ 8b      88    88 88`8b      88       88       88    
+    88             db   8D 88.     Y8b  d8 88b  d88 88 `88.   .88.      88       88    
+    88             `8888Y' Y88888P  `Y88P' ~Y8888P' 88   YD Y888888P    YP       YP    
+    
+    
+    
+    """)
+    Interface = raw_input("Please Enter The Interface For Port Security Configurtion: ")
+    print (Fore.RED + "Port Security Configurtion Started")
+    print (Fore.RED + "Please With")
+    print (Fore.RED + "----------------------------------")
+    telnet.write("enable" + "\n")
+    telnet.write("conf t" + "\n")
+    telnet.write("interface range " + Interface + "\n")
+    telnet.write("switchport port-security " + "\n")
+    telnet.write("switchport port-security maximum 2" +  "\n")
+    time.sleep(1)
+    print (Fore.RED + "End Configurtion")
+
+
+
+
 def DynamicArpInspection():
     
     print ("""
@@ -89,12 +117,12 @@ def DHCPSnooping():
     time.sleep(1)
     print (Fore.RED + "End Configurtion")
 
-
+PortSecurity()
 DHCPSnooping()
-print (Fore.RED + "--------------------------------------")
 DynamicArpInspection()
 
 printer ("[+]:Settings Completed")
-printer ("[+]:DHCP-Snooping: OK")
-printer ("[+]Dynamic-Arp-Inspection: OK")
+printer ("[+]:DHCP-Snooping: Yes")
+printer ("[+]Dynamic-Arp-Inspection: Yes")
+printer ("[+]Port-Security: Yes")
 sys.exit()
