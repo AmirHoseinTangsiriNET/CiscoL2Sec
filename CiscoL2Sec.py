@@ -157,13 +157,45 @@ def StormControlMulticastUnicast():
     telnet.write("storm-control multicast level " + "\n")
     telnet.write("storm-control unicast level " + "\n")
     print ("Storm Control Enabled On Multicast Traffic And UnicastTraffic")
+
         
         
+        
+ def ProtectedPort():
+    print ("""
+    
+     .d8888b. 888       888      8888888b.                888                   888                888 
+    d88P  Y88b888   o   888      888   Y88b               888                   888                888 
+    Y88b.     888  d8b  888      888    888               888                   888                888 
+     "Y888b.  888 d888b 888      888   d88P888d888 .d88b. 888888 .d88b.  .d8888b888888 .d88b.  .d88888 
+        "Y88b.888d88888b888      8888888P" 888P"  d88""88b888   d8P  Y8bd88P"   888   d8P  Y8bd88" 888 
+          "88888888P Y88888888888888       888    888  888888   88888888888     888   88888888888  888 
+    Y88b  d88P8888P   Y8888      888       888    Y88..88PY88b. Y8b.    Y88b.   Y88b. Y8b.    Y88b 888 
+     "Y8888P" 888P     Y888      888       888     "Y88P"  "Y888 "Y8888  "Y8888P "Y888 "Y8888  "Y88888 
+                                                                                                   
+    
+    
+    
+    """)
+    InterfaceForProtected = raw_input("Please Enter The Interface For ProtectedPort Configurtion: ")
+    
+    telnet.write("enable" + "\n")
+    telnet.write("conf t" + "\n")
+    telnet.write("interface range " + InterfaceForProtected + "\n")
+    telnet.write("switchport" + "\n")
+    telnet.write("switchport protected " + "\n")
+    telnet.write("end" + "\n")
+    print ("Enabled Protected Port ")
+ 
+
+
 PortSecurity()
 DHCPSnooping()
 DynamicArpInspection()
 #StormControlBroatcast()
 #StormControlMulticastUnicast()
+#ProtectedPort()
+
 
 
 printer ("[+]:Settings Completed")
