@@ -119,9 +119,49 @@ def DHCPSnooping():
 
         
         
+def StormControlBroatcast():
+    print ("""
+                                                                             
+    .oPYo.   o                       .oPYo.                o               8 
+    8        8                       8    8                8               8 
+    `Yooo.  o8P oPYo. .oPYo. ooYoYo. 8      .oPYo. odYo.  o8P oPYo. .oPYo. 8 
+        `8   8  8  `' 8    8 8' 8  8 8      8    8 8' `8   8  8  `' 8    8 8 
+         8   8  8     8    8 8  8  8 8    8 8    8 8   8   8  8     8    8 8 
+    `YooP'   8  8     `YooP' 8  8  8 `YooP' `YooP' 8   8   8  8     `YooP' 8 
+    :.....:::..:..:::::.....:..:..:..:.....::.....:..::..::..:..:::::.....:..
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+   
+    """)
+    StromControlInterface = raw_input("Please Enter The Interface For StromControl On BroatCast Traffic: ")
+    print (Fore.RED + "Strom Control Configurtion Started")
+    print (Fore.RED + "Please With")
+    print (Fore.RED + "----------------------------------")
+    telnet.write("enable" + "\n")
+    telnet.write("conf t" + "\n")
+    telnet.write("interface range " + Interface + "\n")
+    telnet.write("storm-control broadcast level " + "\n")
+    print ("Storm Control Enabled On BroatCast Traffic")
+    
+    
+    
+def StormControlMulticastUnicast():
+    GigInterface = raw_input("Please Enter The GigEthernet Interface For Multicast Traffic And Unicast: ")
+    
+    telnet.write("enable" + "\n")
+    telnet.write("conf t" + "\n")
+    telnet.write("interface range " + Interface + "\n")
+    telnet.write("storm-control multicast level " + "\n")
+    telnet.write("storm-control unicast level " + "\n")
+    print ("Storm Control Enabled On Multicast Traffic And UnicastTraffic")
+        
+        
 PortSecurity()
 DHCPSnooping()
 DynamicArpInspection()
+#StormControlBroatcast()
+#StormControlMulticastUnicast()
+
 
 printer ("[+]:Settings Completed")
 printer ("[+]:DHCP-Snooping: Yes")
