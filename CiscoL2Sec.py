@@ -19,8 +19,6 @@ def printer(Print):
         time.sleep(2. / 100)
 
 print ("""
-
-
  .d8888b. d8b                        888      .d8888b.  .d8888b.                  
 d88P  Y88bY8P                        888     d88P  Y88bd88P  Y88b                 
 888    888                           888            888Y88b.                      
@@ -29,8 +27,6 @@ d88P  Y88bY8P                        888     d88P  Y88bd88P  Y88b
 888    888888"Y8888b.888     888  888888     d88P"           "88888888888888      
 Y88b  d88P888     X88Y88b.   Y88..88P888     888"      Y88b  d88PY8b.    Y88b.    
  "Y8888P" 888 88888P' "Y8888P "Y88P" 88888888888888888  "Y8888P"  "Y8888  "Y8888P 
-
-
 """)
 
 print ("Welcome To Cisco Layer 2 Security Script")
@@ -139,7 +135,7 @@ def StormControlBroatcast():
     print (Fore.RED + "----------------------------------")
     telnet.write("enable" + "\n")
     telnet.write("conf t" + "\n")
-    telnet.write("interface range " + Interface + "\n")
+    telnet.write("interface range " + StromControlInterface + "\n")
     telnet.write("storm-control broadcast level " + "\n")
     print ("Storm Control Enabled On BroatCast Traffic")
     
@@ -153,7 +149,7 @@ def StormControlMulticastUnicast():
         sys.exit()
     telnet.write("enable" + "\n")
     telnet.write("conf t" + "\n")
-    telnet.write("interface range " + Interface + "\n")
+    telnet.write("interface range " + GigInterface + "\n")
     telnet.write("storm-control multicast level " + "\n")
     telnet.write("storm-control unicast level " + "\n")
     print ("Storm Control Enabled On Multicast Traffic And UnicastTraffic")
@@ -161,7 +157,7 @@ def StormControlMulticastUnicast():
         
         
         
- def ProtectedPort():
+def ProtectedPort():
     print ("""
     
      .d8888b. 888       888      8888888b.                888                   888                888 
@@ -192,9 +188,9 @@ def StormControlMulticastUnicast():
 PortSecurity()
 DHCPSnooping()
 DynamicArpInspection()
-#StormControlBroatcast()
-#StormControlMulticastUnicast()
-#ProtectedPort()
+StormControlBroatcast()
+StormControlMulticastUnicast()
+ProtectedPort()
 
 
 
@@ -202,4 +198,7 @@ printer ("[+]:Settings Completed")
 printer ("[+]:DHCP-Snooping: Yes")
 printer ("[+]Dynamic-Arp-Inspection: Yes")
 printer ("[+]Port-Security: Yes")
+printer ("[+]Strom-Control: Yes")
+printer ("[+]ProtectedPort: Yes")
 sys.exit()
+
