@@ -20,7 +20,7 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ➜  ~ python Cisco2Sec.py
 
-## Attack That This Script Can Prevent:
+## Attack That This Script Can Prevent And Script Features:
 
 - DHCP Spoofing Attack
 
@@ -31,6 +31,14 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 - Arp Cache Poisoning Attack
 
 - Mac Table OverFlow Attack
+
+- Spanning Tree loop Mitigation
+
+- Traffic Bogus Mitigation
+
+- Protected Port 
+If you configure a port as protected, data traffic on Layer 2 is not transfered to other protected ports on this broadcast domain ( or switch stack). Only control traffic is sent to these ports
+
 ## Prerequisite
 * Python 
 * sys
