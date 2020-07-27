@@ -136,7 +136,7 @@ def StormControlBroatcast():
     telnet.write("enable" + "\n")
     telnet.write("conf t" + "\n")
     telnet.write("interface range " + StromControlInterface + "\n")
-    telnet.write("storm-control broadcast level " + "\n")
+    telnet.write("storm-control broadcast level 70" + "\n")
     print ("Storm Control Enabled On BroatCast Traffic")
     
     
@@ -150,9 +150,9 @@ def StormControlMulticastUnicast():
     telnet.write("enable" + "\n")
     telnet.write("conf t" + "\n")
     telnet.write("interface range " + GigInterface + "\n")
-    telnet.write("storm-control multicast level " + "\n")
-    telnet.write("storm-control unicast level " + "\n")
-    print ("Storm Control Enabled On Multicast Traffic And UnicastTraffic")
+    telnet.write("storm-control multicast level 70 " + "\n")
+    telnet.write("storm-control unicast level 70 " + "\n")
+    print ("Storm Control Enabled On Multicast Traffic And Unicast Traffic")
 
         
         
