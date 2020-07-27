@@ -147,7 +147,10 @@ def StormControlBroatcast():
     
 def StormControlMulticastUnicast():
     GigInterface = raw_input("Please Enter The GigEthernet Interface For Multicast Traffic And Unicast: ")
-    
+    if not GigInterface.startswith("gig"):
+        print ("[-]Enter The GigEthernet")
+        print ("[-]Exited The Script")
+        sys.exit()
     telnet.write("enable" + "\n")
     telnet.write("conf t" + "\n")
     telnet.write("interface range " + Interface + "\n")
