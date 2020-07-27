@@ -9,8 +9,6 @@
     ![Build Status](https://github.com/stylelint/stylelint/workflows/CI/badge.svg)
     ![MIT License](https://img.shields.io/static/v1?label=License&message=MIT&color=RED)
 
-# CiscoL2Sec Python Network Security Automation Script
-
 This Is The Network Security Automation Script For Spoofing Attack Prevention In Cisco Layer 2 Switch
 
 # Developer: AmirHosein Tangsiri Nezhad
@@ -24,15 +22,15 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 
 ## Attack That This Script Can Prevent:
 
-* DHCP Spoofing Attack
+- DHCP Spoofing Attack
 
-* DHCP Starvation Attack 
+- DHCP Starvation Attack 
 
-* Arp Spoofing Attack
+- Arp Spoofing Attack
 
-* Arp Cache Poisoning Attack
+- Arp Cache Poisoning Attack
 
-* Mac Table OverFlow Attack
+- Mac Table OverFlow Attack
 ## Prerequisite
 * Python 
 * sys
