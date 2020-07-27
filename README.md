@@ -37,7 +37,7 @@ This Is The Network Security Automation Script For Spoofing Attack Prevention In
 - Traffic Bogus Mitigation
 
 - Protected Port 
-If you configure a port as protected, data traffic on Layer 2 is not transfered to other protected ports on this broadcast domain ( or switch stack). Only control traffic is sent to these ports
+(If you configure a port as protected, data traffic on Layer 2 is not transfered to other protected ports on this broadcast domain ( or switch stack). Only control traffic is sent to these ports)
 
 ## Prerequisite
 * Python 
